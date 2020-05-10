@@ -1,6 +1,6 @@
 page 50360 "Budget by Acc. Period"
 {
-    Caption = 'Budget';
+    Caption = 'Budget by Acc. Period';
     DataCaptionExpression = BudgetName;
     DeleteAllowed = false;
     InsertAllowed = false;
