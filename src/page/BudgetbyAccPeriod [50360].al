@@ -1,6 +1,6 @@
 page 50360 "Budget by Acc. Period"
 {
-    Caption = 'Budget';
+    Caption = 'Budget by Acc. Period';
     DataCaptionExpression = BudgetName;
     DeleteAllowed = false;
     InsertAllowed = false;
@@ -711,8 +711,7 @@ page 50360 "Budget by Acc. Period"
 
         //PeriodType := PeriodType::Month;
         PeriodType := PeriodType::"Accounting Period";
-        //IncomeBalanceGLAccFilter := IncomeBalanceGLAccFilter::"Income Statement";
-        IncomeBalanceGLAccFilter := IncomeBalanceGLAccFilter::" ";
+        IncomeBalanceGLAccFilter := IncomeBalanceGLAccFilter::"Income Statement";
         if DateFilter = '' then
             //    ValidateDateFilter(Format(CalcDate('<-CY>', Today)) + '..' + Format(CalcDate('<CY>', Today)));
             ValidateDateFilter('p1..p12');
